@@ -10,3 +10,4 @@ Practicing CSS (Flexbox, Grid...)
   - display: flex 를 하면 flex-direction: row is default. When you change flex-direction, main and cross axis are also changed.
     - flex-direction: row -> main(수평) / cross(수직)
     - flex-direction: column -> main(수직) / cross(수평)
+  - align-self: works on single item
