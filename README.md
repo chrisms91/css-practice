@@ -22,3 +22,9 @@ Practicing CSS (Flexbox, Grid...)
     - minmax(): control minimum / maximum size of content
     - min-content: 가능한 적게 자리를 차지할 수 있게 해줌
     - max-content: 가능한 자리를 많이 차지할 수 있게
+    - auto-fill: 가능한 많은 cell로 container를 꽉 채움 (creating ghost grid)
+    - auto-fit: 빈자리를 채울때까지 expand.
+      - repeat(auto-fill, minmax(350px, 1fr));
+  - grid also have justify-content, alogn-content...like flexbox
+    - place-content:  align-content + justify-content 
+  - place-content는 box자체를 움직임, place-items는 박스 안의 content를 움직임
