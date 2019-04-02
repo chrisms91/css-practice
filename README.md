@@ -19,6 +19,15 @@ Practicing CSS (Flexbox, Grid...)
   - **grid-template-ares + grid-area: you can draw the grid. need a size -> use grid-auto-rows or columns**
     - divs find a proper place to put without setting width, height or top...
 
+    ```css
+    .father {
+       display: grid;
+       grid-auto-rows: 100px;
+       grid-gap: 10px;
+       grid-template-columns: repeat(5, 1fr);
+     }
+    ```
+
   - **grid has new measurement unit: fr (fraction)**
     - repeat(): set same size for all columns
     - minmax(): control minimum / maximum size of content

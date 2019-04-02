@@ -1,0 +1,19 @@
+{
+  "name": "css-practice",
+  "version": "1.0.0",
+  "description": "Practicing CSS (Flexbox, Grid...)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisms91/css-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisms91/css-practice/issues"
+  },
+  "homepage": "https://github.com/chrisms91/css-practice#readme",
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}
