@@ -2,7 +2,7 @@
 
 Practicing CSS (Flexbox, Grid...)
 
-### #1. FlexBox
+### **#1. FlexBox**
 
   - Father 에게 명령한 규칙은 children items들에게 영향을 끼치게 된다
   - 수평정렬: justify-content, 수직정렬: align-items
@@ -11,7 +11,7 @@ Practicing CSS (Flexbox, Grid...)
     - flex-direction: column -> main(수직) / cross(수평)
   - align-self: works on single item
 
-  ### #2. Grid
+### **#2. Grid**
 
   - **Grid has similar things to flexbox.**
     - grid-auto-direction: row is defualt -> 정의되지 않은 elements에 대해서는 row에 자동으로 놓는다.
@@ -66,3 +66,10 @@ Practicing CSS (Flexbox, Grid...)
   grid-area: 2 / 1 / 4 / -1;
 }
 ```
+
+
+
+### **#3. PostCSS / CSSNext / CSS4**
+- Parcel
+  - Like es6 is being transformed to es5 through barbel, parcel let us using modern CSS functionalities (CSS4)
+  - Parcel 공식 홈페이지: https://ko.parceljs.org
