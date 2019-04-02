@@ -13,11 +13,13 @@ Practicing CSS (Flexbox, Grid...)
 
   ### #2. Grid
 
-  - Grid has similar things to flexbox.
+  - **Grid has similar things to flexbox.**
     - grid-auto-direction: row is defualt -> 정의되지 않은 elements에 대해서는 row에 자동으로 놓는다.
-  - grid-template-ares + grid-area: you can draw the grid. need a size -> use grid-auto-rows or columns;
+
+  - **grid-template-ares + grid-area: you can draw the grid. need a size -> use grid-auto-rows or columns**
     - divs find a proper place to put without setting width, height or top...
-  -grid has new measurement unit: fr (fraction)
+
+  - **grid has new measurement unit: fr (fraction)**
     - repeat(): set same size for all columns
     - minmax(): control minimum / maximum size of content
     - min-content: 가능한 적게 자리를 차지할 수 있게 해줌
@@ -25,6 +27,33 @@ Practicing CSS (Flexbox, Grid...)
     - auto-fill: 가능한 많은 cell로 container를 꽉 채움 (creating ghost grid)
     - auto-fit: 빈자리를 채울때까지 expand.
       - repeat(auto-fill, minmax(350px, 1fr));
-  - grid also have justify-content, alogn-content...like flexbox
+
+  - **grid also have justify-content, alogn-content...like flexbox**
     - place-content:  align-content + justify-content 
-  - place-content는 box자체를 움직임, place-items는 박스 안의 content를 움직임
+
+  - **place-content는 box자체를 움직임, place-items는 박스 안의 content를 움직임**
+
+  - **grid-column: determine grid item's size**
+    - grid-column: 1 / 3 -> this grid will be from line 1 to line 3 (line으로 계산한다.)
+    - grid-column-end: -1 -> 라인 전체를 차지합니다. (라인수를 세기 귀찮을 때)
+    - grid-auto-flow: dense -> 빈칸을 땡겨 채울 수 있다 (자주 사용 안함..)
+
+  - box 안 첫번째 자식에게 1 부터 5까지 가져가라고 명령하는 것.
+```css
+.box:first-child {
+  grid-row: 1 / 5
+}
+```
+- span을 써서 더 편하게 사용 가능.
+```css
+.box:first-child {
+  grid-row: span 5
+}
+```
+
+- Row Start / Column Start / Row End / Column End
+```css
+.box:first-child {
+  grid-area: 2 / 1 / 4 / -1;
+}
+```
