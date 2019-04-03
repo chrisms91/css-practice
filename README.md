@@ -73,3 +73,22 @@ Practicing CSS (Flexbox, Grid...)
 - Parcel
   - Like es6 is being transformed to es5 through barbel, parcel let us using modern CSS functionalities (CSS4)
   - Parcel 공식 홈페이지: https://ko.parceljs.org
+
+- PostCSS
+  - A tool for transforming CSS with JavaScript
+
+- Funtional Pseudo Selectors
+  > look into the document for more feature
+  - matches(), not()
+    - 해당되는 속성을 넣어주면 적용 / 제외 시킴.
+  ```css
+  li:matches(:nth-child(even), .target) {
+    /* 짝수번째 li들 + li with target class 선택 */
+    background-color: blue;
+  }
+
+  li:not(.target) {
+    /* target클라스 element 제외 */
+    background-color: blue;
+  }
+  ```
