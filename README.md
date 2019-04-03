@@ -92,3 +92,23 @@ Practicing CSS (Flexbox, Grid...)
     background-color: blue;
   }
   ```
+
+- @custom-selector , CSS Variable
+```css
+/* 변수를 선언하고 값을 넣어줌. 변수앞에는 --가 붙는다 */
+:root {
+  --awesomeColor: #e74c3c;
+}
+
+li:first-child a {
+  color: var(--awesomeColor);
+}
+
+/* @custom-selector는 property가 아니고 seleciton of element.*/
+/*change color of every header elements.*/
+@custom-selector :--headers h1, h2, h3, h4, h5, h6;
+
+:--headers {
+  color: #8e44ad;
+}
+```
